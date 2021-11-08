@@ -13,7 +13,7 @@ docker container run -d -p <localPort>:<containerPort> --name <customContainerNa
 
 # Attach a volume from your machine to your container (-v option)
 
-docker container run -d -p 8181:80 -v <localDir>:<containerDir>
+docker container run -d -p <localPort>:<containerPort> -v <localDir>:<containerDir> <imageName>
 
 # Bash into a running container
 
